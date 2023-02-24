@@ -1,0 +1,3 @@
+[submodule "DinoTableView"]
+	path = DinoTableView
+	url = https://github.com/agCepeda/DinoTableView.git
