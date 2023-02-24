@@ -30,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F2217F0329A93F7300B72938 /* DinoTableView Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DinoTableView Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2217F0329A93F7300B72938 /* DinoTableView-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DinoTableView-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2217F0629A93F7300B72938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2217F0829A93F7300B72938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2217F0A29A93F7300B72938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		F2217EFA29A93F7300B72938 = {
 			isa = PBXGroup;
 			children = (
-				F2217F0529A93F7300B72938 /* DinoTableView Playground */,
+				F2217F0529A93F7300B72938 /* DinoTableView-Playground */,
 				F2217F0429A93F7300B72938 /* Products */,
 				F2217F5329A9420000B72938 /* Frameworks */,
 			);
@@ -64,12 +64,12 @@
 		F2217F0429A93F7300B72938 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2217F0329A93F7300B72938 /* DinoTableView Playground.app */,
+				F2217F0329A93F7300B72938 /* DinoTableView-Playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2217F0529A93F7300B72938 /* DinoTableView Playground */ = {
+		F2217F0529A93F7300B72938 /* DinoTableView-Playground */ = {
 			isa = PBXGroup;
 			children = (
 				F2217F0629A93F7300B72938 /* AppDelegate.swift */,
@@ -81,7 +81,7 @@
 				F2217F1729A93F7300B72938 /* Info.plist */,
 				F2217F0F29A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld */,
 			);
-			path = "DinoTableView Playground";
+			path = "DinoTableView-Playground";
 			sourceTree = "<group>";
 		};
 		F2217F5329A9420000B72938 /* Frameworks */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2217F0229A93F7300B72938 /* DinoTableView Playground */ = {
+		F2217F0229A93F7300B72938 /* DinoTableView-Playground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2217F1A29A93F7300B72938 /* Build configuration list for PBXNativeTarget "DinoTableView Playground" */;
+			buildConfigurationList = F2217F1A29A93F7300B72938 /* Build configuration list for PBXNativeTarget "DinoTableView-Playground" */;
 			buildPhases = (
 				F2217EFF29A93F7300B72938 /* Sources */,
 				F2217F0029A93F7300B72938 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = "DinoTableView Playground";
+			name = "DinoTableView-Playground";
 			productName = "DinoTableView Playground";
-			productReference = F2217F0329A93F7300B72938 /* DinoTableView Playground.app */;
+			productReference = F2217F0329A93F7300B72938 /* DinoTableView-Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F2217EFE29A93F7300B72938 /* Build configuration list for PBXProject "DinoTableView Playground" */;
+			buildConfigurationList = F2217EFE29A93F7300B72938 /* Build configuration list for PBXProject "DinoTableView-Playground" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2217F0229A93F7300B72938 /* DinoTableView Playground */,
+				F2217F0229A93F7300B72938 /* DinoTableView-Playground */,
 			);
 		};
 /* End PBXProject section */
@@ -313,9 +313,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4X4PXM867M;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DinoTableView Playground/Info.plist";
+				INFOPLIST_FILE = "DinoTableView-Playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,9 +341,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4X4PXM867M;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DinoTableView Playground/Info.plist";
+				INFOPLIST_FILE = "DinoTableView-Playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2217EFE29A93F7300B72938 /* Build configuration list for PBXProject "DinoTableView Playground" */ = {
+		F2217EFE29A93F7300B72938 /* Build configuration list for PBXProject "DinoTableView-Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2217F1829A93F7300B72938 /* Debug */,
@@ -374,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2217F1A29A93F7300B72938 /* Build configuration list for PBXNativeTarget "DinoTableView Playground" */ = {
+		F2217F1A29A93F7300B72938 /* Build configuration list for PBXNativeTarget "DinoTableView-Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2217F1B29A93F7300B72938 /* Debug */,
