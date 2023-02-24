@@ -14,6 +14,8 @@
 		F2217F1129A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2217F0F29A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld */; };
 		F2217F1329A93F7300B72938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2217F1229A93F7300B72938 /* Assets.xcassets */; };
 		F2217F1629A93F7300B72938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2217F1429A93F7300B72938 /* LaunchScreen.storyboard */; };
+		F2D398F029A9492E00CEC376 /* DinoTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D398EF29A9492E00CEC376 /* DinoTableView.framework */; };
+		F2D398F129A9492E00CEC376 /* DinoTableView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D398EF29A9492E00CEC376 /* DinoTableView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F2D398F129A9492E00CEC376 /* DinoTableView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +42,8 @@
 		F2217F1229A93F7300B72938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2217F1529A93F7300B72938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2217F1729A93F7300B72938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D398E629A948B300CEC376 /* DinoTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinoTableView.xcodeproj; path = ../../DinoTableView/DinoTableView.xcodeproj; sourceTree = "<group>"; };
+		F2D398EF29A9492E00CEC376 /* DinoTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DinoTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D398F029A9492E00CEC376 /* DinoTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,7 @@
 		F2217F0529A93F7300B72938 /* DinoTableView-Playground */ = {
 			isa = PBXGroup;
 			children = (
+				F2D398E629A948B300CEC376 /* DinoTableView.xcodeproj */,
 				F2217F0629A93F7300B72938 /* AppDelegate.swift */,
 				F2217F0829A93F7300B72938 /* SceneDelegate.swift */,
 				F2217F0A29A93F7300B72938 /* ViewController.swift */,
@@ -87,6 +94,7 @@
 		F2217F5329A9420000B72938 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2D398EF29A9492E00CEC376 /* DinoTableView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
