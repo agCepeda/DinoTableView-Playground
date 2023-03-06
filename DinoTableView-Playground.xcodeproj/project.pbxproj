@@ -14,18 +14,35 @@
 		F2217F1129A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2217F0F29A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld */; };
 		F2217F1329A93F7300B72938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2217F1229A93F7300B72938 /* Assets.xcassets */; };
 		F2217F1629A93F7300B72938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2217F1429A93F7300B72938 /* LaunchScreen.storyboard */; };
-		F2D398F029A9492E00CEC376 /* DinoTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D398EF29A9492E00CEC376 /* DinoTableView.framework */; };
-		F2D398F129A9492E00CEC376 /* DinoTableView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D398EF29A9492E00CEC376 /* DinoTableView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2D3991B29A955DF00CEC376 /* DinoViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3991829A955C700CEC376 /* DinoViews.framework */; };
+		F2D3991C29A955DF00CEC376 /* DinoViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3991829A955C700CEC376 /* DinoViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F2D3991729A955C700CEC376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2217F2729A9402A00B72938;
+			remoteInfo = DinoViews;
+		};
+		F2D3991929A955C700CEC376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2217F3129A9402A00B72938;
+			remoteInfo = DinoViewsTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		F2217F5629A9420000B72938 /* Embed Frameworks */ = {
+		F2D3991D29A955DF00CEC376 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F2D398F129A9492E00CEC376 /* DinoTableView.framework in Embed Frameworks */,
+				F2D3991C29A955DF00CEC376 /* DinoViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,8 +59,9 @@
 		F2217F1229A93F7300B72938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2217F1529A93F7300B72938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2217F1729A93F7300B72938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2D398E629A948B300CEC376 /* DinoTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinoTableView.xcodeproj; path = ../../DinoTableView/DinoTableView.xcodeproj; sourceTree = "<group>"; };
 		F2D398EF29A9492E00CEC376 /* DinoTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DinoTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D398F429A950D400CEC376 /* DinoViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DinoViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinoViews.xcodeproj; path = DinoViews/DinoViews.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D398F029A9492E00CEC376 /* DinoTableView.framework in Frameworks */,
+				F2D3991B29A955DF00CEC376 /* DinoViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +96,7 @@
 		F2217F0529A93F7300B72938 /* DinoTableView-Playground */ = {
 			isa = PBXGroup;
 			children = (
-				F2D398E629A948B300CEC376 /* DinoTableView.xcodeproj */,
+				F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */,
 				F2217F0629A93F7300B72938 /* AppDelegate.swift */,
 				F2217F0829A93F7300B72938 /* SceneDelegate.swift */,
 				F2217F0A29A93F7300B72938 /* ViewController.swift */,
@@ -94,9 +112,19 @@
 		F2217F5329A9420000B72938 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2D398F429A950D400CEC376 /* DinoViews.framework */,
 				F2D398EF29A9492E00CEC376 /* DinoTableView.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D3991329A955C700CEC376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3991829A955C700CEC376 /* DinoViews.framework */,
+				F2D3991A29A955C700CEC376 /* DinoViewsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,7 +137,7 @@
 				F2217EFF29A93F7300B72938 /* Sources */,
 				F2217F0029A93F7300B72938 /* Frameworks */,
 				F2217F0129A93F7300B72938 /* Resources */,
-				F2217F5629A9420000B72938 /* Embed Frameworks */,
+				F2D3991D29A955DF00CEC376 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,12 +174,35 @@
 			mainGroup = F2217EFA29A93F7300B72938;
 			productRefGroup = F2217F0429A93F7300B72938 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F2D3991329A955C700CEC376 /* Products */;
+					ProjectRef = F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F2217F0229A93F7300B72938 /* DinoTableView-Playground */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F2D3991829A955C700CEC376 /* DinoViews.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DinoViews.framework;
+			remoteRef = F2D3991729A955C700CEC376 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2D3991A29A955C700CEC376 /* DinoViewsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DinoViewsTests.xctest;
+			remoteRef = F2D3991929A955C700CEC376 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F2217F0129A93F7300B72938 /* Resources */ = {
@@ -321,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4X4PXM867M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DinoTableView-Playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4X4PXM867M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DinoTableView-Playground/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
