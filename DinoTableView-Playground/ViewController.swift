@@ -8,6 +8,11 @@
 import UIKit
 import DinoViews
 
+struct StudentRecordModel {
+  var firstName: String
+  var lastName: String
+}
+
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
@@ -36,17 +41,28 @@ class ViewController: UIViewController {
 
 
     dinoTableView.dataSource = self
-    dinoTableView.layoutSettings = LayoutSettings(columns: columns, headerRowHeight: 50.0, contentRowHeight: 50.0)
+    dinoTableView.layoutSettings = Settings(columns: columns,
+                                                  headerRowHeight: 50.0,
+                                                  contentRowHeight: 50.0,
+                                                  stickyHeader: true,
+                                                  stickyColumn: true)
+
     dinoTableView.frame = self.view.frame
-    dinoTableView.translatesAutoresizingMaskIntoConstraints = true
+    dinoTableView.translatesAutoresizingMaskIntoConstraints = false
 
     self.view.addSubview(dinoTableView)
-
+    NSLayoutConstraint.activate([
+      dinoTableView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
+      dinoTableView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+      dinoTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+      dinoTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+    ])
   }
 
 }
 
 extension ViewController: DinoTableViewDataSource {
+
   public func getRowCount() -> Int {
     return 50
   }
