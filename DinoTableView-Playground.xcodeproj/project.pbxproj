@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A757BD9F5970F517711140 /* AudioMP3Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A75EF00E08E9EB193E34EB /* AudioMP3Reader.swift */; };
+		53A7590A3698FAE3698FB8BE /* MP3Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A754A7930D8765AFA8AB3E /* MP3Reader.swift */; };
+		53A75ECF3A462EF39894923D /* SwiftThrottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A754B01660C80C4DE79808 /* SwiftThrottle.swift */; };
+		53A75EEE459EE43FCDF4423A /* Mp3FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A755BD9A04E61A0CFDCD6B /* Mp3FileViewController.swift */; };
 		F2217F0729A93F7300B72938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2217F0629A93F7300B72938 /* AppDelegate.swift */; };
 		F2217F0929A93F7300B72938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2217F0829A93F7300B72938 /* SceneDelegate.swift */; };
 		F2217F0B29A93F7300B72938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2217F0A29A93F7300B72938 /* ViewController.swift */; };
@@ -16,6 +20,7 @@
 		F2217F1629A93F7300B72938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2217F1429A93F7300B72938 /* LaunchScreen.storyboard */; };
 		F2D3991B29A955DF00CEC376 /* DinoViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3991829A955C700CEC376 /* DinoViews.framework */; };
 		F2D3991C29A955DF00CEC376 /* DinoViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3991829A955C700CEC376 /* DinoViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2E4104329D3BEB400A9B46A /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E4104029D3BEB400A9B46A /* CoreAudioKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53A754A7930D8765AFA8AB3E /* MP3Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MP3Reader.swift; sourceTree = "<group>"; };
+		53A754B01660C80C4DE79808 /* SwiftThrottle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftThrottle.swift; sourceTree = "<group>"; };
+		53A755BD9A04E61A0CFDCD6B /* Mp3FileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mp3FileViewController.swift; sourceTree = "<group>"; };
+		53A75EF00E08E9EB193E34EB /* AudioMP3Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMP3Reader.swift; sourceTree = "<group>"; };
 		F2217F0329A93F7300B72938 /* DinoTableView-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DinoTableView-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2217F0629A93F7300B72938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2217F0829A93F7300B72938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 		F2D398EF29A9492E00CEC376 /* DinoTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DinoTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D398F429A950D400CEC376 /* DinoViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DinoViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D3991229A955C700CEC376 /* DinoViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinoViews.xcodeproj; path = DinoViews/DinoViews.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F2E4104029D3BEB400A9B46A /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D3991B29A955DF00CEC376 /* DinoViews.framework in Frameworks */,
+				F2E4104329D3BEB400A9B46A /* CoreAudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +116,10 @@
 				F2217F1429A93F7300B72938 /* LaunchScreen.storyboard */,
 				F2217F1729A93F7300B72938 /* Info.plist */,
 				F2217F0F29A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld */,
+				53A755BD9A04E61A0CFDCD6B /* Mp3FileViewController.swift */,
+				53A754B01660C80C4DE79808 /* SwiftThrottle.swift */,
+				53A754A7930D8765AFA8AB3E /* MP3Reader.swift */,
+				53A75EF00E08E9EB193E34EB /* AudioMP3Reader.swift */,
 			);
 			path = "DinoTableView-Playground";
 			sourceTree = "<group>";
@@ -112,6 +127,7 @@
 		F2217F5329A9420000B72938 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2E4104029D3BEB400A9B46A /* CoreAudioKit.framework */,
 				F2D398F429A950D400CEC376 /* DinoViews.framework */,
 				F2D398EF29A9492E00CEC376 /* DinoTableView.framework */,
 			);
@@ -226,6 +242,10 @@
 				F2217F0729A93F7300B72938 /* AppDelegate.swift in Sources */,
 				F2217F1129A93F7300B72938 /* DinoTableView_Playground.xcdatamodeld in Sources */,
 				F2217F0929A93F7300B72938 /* SceneDelegate.swift in Sources */,
+				53A75EEE459EE43FCDF4423A /* Mp3FileViewController.swift in Sources */,
+				53A75ECF3A462EF39894923D /* SwiftThrottle.swift in Sources */,
+				53A7590A3698FAE3698FB8BE /* MP3Reader.swift in Sources */,
+				53A757BD9F5970F517711140 /* AudioMP3Reader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

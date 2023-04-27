@@ -8,44 +8,31 @@
 import UIKit
 import DinoViews
 
-struct StudentRecordModel {
-  var firstName: String
-  var lastName: String
-}
-
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
-    let dinoTableView = DinoTableView()
+    let dinoTableView = GridTableView()
 
     let columns = [
-      ColumnModel(name: "Columna 1", width: 200.0),
-      ColumnModel(name: "Columna 2", width: 100.0),
-      ColumnModel(name: "Columna 3", width: 200.0),
-      ColumnModel(name: "Columna 4", width: 100.0),
-      ColumnModel(name: "Columna 5", width: 300.0),
-      ColumnModel(name: "Columna 1", width: 100.0),
-      ColumnModel(name: "Columna 2", width: 100.0),
-      ColumnModel(name: "Columna 3", width: 100.0),
-      ColumnModel(name: "Columna 4", width: 100.0),
-      ColumnModel(name: "Columna 5", width: 100.0),
-      ColumnModel(name: "Columna 1", width: 100.0),
-      ColumnModel(name: "Columna 2", width: 100.0),
-      ColumnModel(name: "Columna 3", width: 100.0),
-      ColumnModel(name: "Columna 4", width: 100.0),
-      ColumnModel(name: "Columna 5", width: 100.0),
+      ColumnModel(name: "lastName", width: 200.0, attributeKey: "lastName"),
+      ColumnModel(name: "firstName", width: 100.0, attributeKey: "firstName"),
+      ColumnModel(name: "age", width: 200.0, attributeKey: "age"),
+      ColumnModel(name: "weight", width: 100.0, attributeKey: "weight"),
+      ColumnModel(name: "height", width: 300.0, attributeKey: "height"),
+      ColumnModel(name: "gender", width: 100.0, attributeKey: "gender"),
+      ColumnModel(name: "savings", width: 300.0, attributeKey: "savings"),
     ]
 
-
-    dinoTableView.dataSource = self
-    dinoTableView.layoutSettings = Settings(columns: columns,
-                                                  headerRowHeight: 50.0,
-                                                  contentRowHeight: 50.0,
-                                                  stickyHeader: true,
-                                                  stickyColumn: true)
+    dinoTableView.dataProvider = StudentsDataSource()
+    dinoTableView.columns = columns
+    dinoTableView.headerRowHeight = 50.0
+    dinoTableView.contentRowHeight = 70.0
+    dinoTableView.stickyColumn = true
+    dinoTableView.showHeader = false
+    dinoTableView.stickyHeader = true
 
     dinoTableView.frame = self.view.frame
     dinoTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -61,15 +48,17 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: DinoTableViewDataSource {
-
-  public func getRowCount() -> Int {
+class StudentsDataSource: GridTableViewDataProvider {
+  func getRowCount() -> Int {
     return 50
   }
 
-  public func getRow(from index: Int) -> RowModel {
-    return RowModel()
+  public func getRow(from index: Int) -> Dictionary<String, NSObject> {
+    return Dictionary(dictionaryLiteral: ("firstName", "Juan Luis" as NSObject),
+                                         ("lastName", "Lopez Perez" as NSObject),
+                                         ("age", 19 as NSObject),
+                                         ("weight", 72.5 as NSObject),
+                                         ("savings", 71222.53123 as NSObject),
+                                         ("gender", "Male" as NSObject))
   }
 }
-
-extension ViewController: DinoTableViewDelegate {}
