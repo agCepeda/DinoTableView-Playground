@@ -6,6 +6,22 @@ import UIKit
 import MobileCoreServices
 import AVFoundation
 
+func listMP3FilesInDocumentsDirectory() -> [URL]? {
+  let fileManager = FileManager.default
+  let documentsURL = fileManager.urls(for: .downloadsDirectory, in: .userDomainMask).first
+
+
+  do {
+    let directoryContents = try fileManager.contentsOfDirectory(at: documentsURL!, includingPropertiesForKeys: nil, options: [])
+    let mp3Files = directoryContents.filter { $0.pathExtension == "mp3" }
+    return mp3Files
+  } catch {
+    print("Error listing MP3 files: \(error.localizedDescription)")
+    return nil
+  }
+}
+
+
 class Mp3FileViewController: UIViewController, UIDocumentPickerDelegate  {
 
 
@@ -21,6 +37,15 @@ class Mp3FileViewController: UIViewController, UIDocumentPickerDelegate  {
     super.viewDidLoad()
     setup()
     // Do any additional setup after loading the view.
+
+    if let mp3Files = listMP3FilesInDocumentsDirectory() {
+      print("Found \(mp3Files.count) MP3 files:")
+      for file in mp3Files {
+        print(file.lastPathComponent)
+      }
+    } else {
+      print("No MP3 files found.")
+    }
 
     pickButton.setTitle("Pick File", for: .normal)
     pickButton.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +86,7 @@ class Mp3FileViewController: UIViewController, UIDocumentPickerDelegate  {
 
   func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
     guard let selectedURL = urls.first else { return }
+    print("Selected MP3 file: \(selectedURL.absoluteString)")
     print("Selected MP3 file: \(selectedURL.lastPathComponent)")
     // Do something with the selected file URL, such as play the mp3 file
 

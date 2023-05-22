@@ -20,6 +20,9 @@
 				</dict>
 			</array>
 		</dict>
+		<key>NSAppleMusicUsageDescription</key>
+		<string>Access to your media library is needed to list MP3 files.</string>
 	</dict>
+
 </dict>
 </plist>
